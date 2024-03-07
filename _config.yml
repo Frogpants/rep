@@ -1,15 +1,15 @@
-title: Teacher 2.0
+title: Spencer's Blog
 description: "August 2023 to June 2024"
-owner_name: John Mortensen
-github_username: nighthawkcoders
-github_repo: "teacher_portfolio"
-baseurl: "/teacher_portfolio"
+owner_name: Spencer Lyons
+github_username: Frogpants
+github_repo: "rep"
+baseurl: "/rep"
 future: true
 remote_theme: jekyll/minima
 minima:
   social_links:
-    - { platform: github, user_url: "https://github.com/nighthawkcoders/teacher_portfolio"}
-    - { platform: x, user_url: "https://x.com/NighthawkCoding/" }
+    - { platform: github, user_url: "https://github.com/Frogpants/rep"}
+    - { platform: x, user_url: "https://x.com/elonmusk/" }
     - { platform: youtube, user_url: "https://www.youtube.com/@nighthawkcodingsociety2868" }      
 # remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/minimal@v0.2.0

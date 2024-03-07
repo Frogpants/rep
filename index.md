@@ -91,19 +91,19 @@ hide: true
       }, this.interval);
     }
 
-    startWalking() {
+    startRight() {
       this.stopAnimate();
-      this.animate(this.obj["Walk"], 3);
+      this.animate(this.obj["Walk"], 10);
     }
 
     startRunning() {
       this.stopAnimate();
-      this.animate(this.obj["Run1"], 6);
+      this.animate(this.obj["Run1"], 20);
     }
 
-    startPuffing() {
+    startLeft() {
       this.stopAnimate();
-      this.animate(this.obj["Puff"], 0);
+      this.animate(this.obj["Walk"], -10);
     }
 
     startCheering() {
@@ -137,8 +137,8 @@ hide: true
         mario.startCheering();
       } else {
         if (mario.currentSpeed === 0) {
-          mario.startWalking();
-        } else if (mario.currentSpeed === 3) {
+          mario.startRight();
+        } else if (mario.currentSpeed === 10) {
           mario.startRunning();
         }
       }
@@ -147,7 +147,7 @@ hide: true
       if (event.repeat) {
         mario.stopAnimate();
       } else {
-        mario.startPuffing();
+        mario.startLeft();
       }
     }
   });
@@ -183,12 +183,12 @@ hide: true
     // adjust sprite size for high pixel density devices
     const scale = window.devicePixelRatio;
     const sprite = document.querySelector(".sprite");
-    sprite.style.transform = `scale(${0.2 * scale})`;
+    sprite.style.transform = `scale(${0.5 * scale})`;
     mario.startResting();
   });
 
 </script>
-Investing in Your Technical Future
+
 
 Explore the Computer Science Pathway at Del Norte High School. All Del Norte CompSci classes are designed to provide a real-world development experience. Grading is focused on time invested, analytics, participation with peers, and engagement in learning.
 
